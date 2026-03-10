@@ -1,31 +1,65 @@
 {
   "name": "devcleaner",
   "version": "1.0.0",
-  "description": "CLI tool to clean development tool caches with TUI interface",
-  "main": "dist/index.js",
-  "bin": {
-    "devcleaner": "./dist/index.js"
+  "description": "CLI tool to clean development tool caches on Windows with TUI interface",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
   },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "main": "dist/index.cjs",
+  "bin": {
+    "devcleaner": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "dev": "tsx src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.cjs",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@clack/prompts": "^1.1.0",
     "execa": "^9.6.1",
-    "picocolors": "^1.1.1",
-    "tsx": "^4.21.0"
+    "picocolors": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^25.4.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.5.3"
   },
   "keywords": [
     "cli",
     "cache-cleaner",
     "development-tools",
-    "tui"
-  ],
-  "license": "MIT"
+    "tui",
+    "windows",
+    "powershell",
+    "npm",
+    "yarn",
+    "pnpm",
+    "pip",
+    "gradle",
+    "maven",
+    "cargo",
+    "nuget",
+    "scoop",
+    "winget",
+    "chocolatey",
+    "disk-cleaner"
+  ]
 }

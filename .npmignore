@@ -1,0 +1,43 @@
+# Source files
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development
+*.ts
+!dist/**/*.ts
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# Misc
+*.md
+!README.md
+LICENSE
