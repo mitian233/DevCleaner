@@ -12,6 +12,9 @@ import { CargoCleaner } from './cargo'
 import { NugetCleaner } from './nuget'
 import { GoCleaner } from './go'
 import { SystemTempCleaner } from './system'
+import { ScoopCleaner } from './scoop'
+import { ChocolateyCleaner } from './chocolatey'
+import { WingetCleaner } from './winget'
 
 const ALL_TOOLS: CacheTool[] = [
   new NpmCleaner()['tool'],
@@ -24,6 +27,9 @@ const ALL_TOOLS: CacheTool[] = [
   new NugetCleaner()['tool'],
   new GoCleaner()['tool'],
   new SystemTempCleaner()['tool'],
+  new ScoopCleaner()['tool'],
+  new ChocolateyCleaner()['tool'],
+  new WingetCleaner()['tool'],
 ]
 
 export async function detectAvailableTools(): Promise<ToolStatus[]> {

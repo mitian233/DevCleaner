@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:\\\\Users\\\\mikan\\\\WebstormProjects\\\\DevCleaner\" && pnpm exec tsc --noEmit 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\mikan\\\\WebstormProjects\\\\DevCleaner\" && pnpm build 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\mikan\\\\WebstormProjects\\\\DevCleaner\" && node dist/index.js 2>&1 | head -30)",
+      "Bash(cd \"C:\\\\Users\\\\mikan\\\\WebstormProjects\\\\DevCleaner\" && node dist/index.js 2>&1 | grep -E \"\\(Cache|Detecting|Detection\\)\" | head -20)"
+    ]
+  }
+}
