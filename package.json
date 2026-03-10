@@ -1,0 +1,31 @@
+{
+  "name": "devcleaner",
+  "version": "1.0.0",
+  "description": "CLI tool to clean development tool caches with TUI interface",
+  "main": "dist/index.js",
+  "bin": {
+    "devcleaner": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "execa": "^9.6.1",
+    "picocolors": "^1.1.1",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "^5.5.3"
+  },
+  "keywords": [
+    "cli",
+    "cache-cleaner",
+    "development-tools",
+    "tui"
+  ],
+  "license": "MIT"
+}
