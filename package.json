@@ -1,17 +1,17 @@
 {
-  "name": "devcleaner",
+  "name": "@mitian233/devcleaner",
   "version": "1.0.0",
   "description": "CLI tool to clean development tool caches on Windows with TUI interface",
-  "author": "",
+  "author": "mitian233",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitian233/DevCleaner/issues"
+  },
+  "homepage": "https://github.com/mitian233/DevCleaner#readme",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/mitian233/DevCleaner.git"
   },
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "main": "dist/index.cjs",
   "bin": {
     "devcleaner": "./dist/index.cjs"
